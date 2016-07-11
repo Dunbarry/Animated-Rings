@@ -1,0 +1,26 @@
+.container {
+  background:grey;
+  width:300px;
+}
+
+#inner{
+  border-top:30px solid grey;
+  border-bottom:30px solid grey;
+}
+
+.circle {
+  animation: mySpinAnimation 10s infinite;  /*setting animation. @keyframes/
+  animation-timing-function: ease-in-out;  /*Slows rotation*/
+  margin: 20px;
+  border-top:30px solid black;
+  border-bottom:30px solid white;
+  border-right:30px solid grey;
+  border-left:30px solid grey;
+  border-radius:50%;
+}
+
+@keyframes mySpinAnimation {
+  0%   { transform: rotate(0deg);}
+  50%  { transform: rotate(-360deg);}
+  100% { transform: rotate(0deg);}
+}
